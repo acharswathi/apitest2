@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "9686fd1a-615b-4152-b068-4ac8525f77c8",
+		"name": "Sample",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://hybrid.cmtest.cuemath.com:7026/concepts/v2/programs/",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "be5b2597-253e-43fc-b209-63eac45459a8",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "SERVICE_ACCESS_KEY",
+						"value": "5f3d867e3e75cb8113fe258a712610ed",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://hybrid.cmtest.cuemath.com:7026/concepts/v2/programs/",
+					"protocol": "http",
+					"host": [
+						"hybrid",
+						"cmtest",
+						"cuemath",
+						"com"
+					],
+					"port": "7026",
+					"path": [
+						"concepts",
+						"v2",
+						"programs",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
